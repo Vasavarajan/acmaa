@@ -1,0 +1,9 @@
+.RightSide {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+.link{
+    padding:20px
+}

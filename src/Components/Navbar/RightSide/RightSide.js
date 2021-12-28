@@ -1,10 +1,14 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
+import "./RightSide.css";
+
+
 function RightSide() {
     return (
-        <div>
+        <div className="RightSide">
             <NavLink
+                className="link"
                 style={({ isActive }) => {
                     return {
                         display: "block",
@@ -17,6 +21,7 @@ function RightSide() {
                 Home
             </NavLink>
             <NavLink
+                className="RightSide"
                 style={({ isActive }) => {
                     return {
                         display: "block",

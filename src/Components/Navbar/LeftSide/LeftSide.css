@@ -1,0 +1,5 @@
+.LeftSide {
+    display: flex;
+    justify-content: flex-start;
+    color: white;
+}
