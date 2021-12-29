@@ -3,7 +3,6 @@ import { NavLink } from "react-router-dom";
 
 import "./RightSide.css";
 
-
 function RightSide() {
     return (
         <div className="RightSide">
@@ -12,26 +11,60 @@ function RightSide() {
                 style={({ isActive }) => {
                     return {
                         display: "block",
-                        margin: "1rem 0",
                         color: isActive ? "red" : "",
                     };
                 }}
                 to={`/`}
             >
-                Home
+                HOME
             </NavLink>
             <NavLink
-                className="RightSide"
+                className="link"
                 style={({ isActive }) => {
                     return {
                         display: "block",
-                        margin: "1rem 0",
                         color: isActive ? "red" : "",
                     };
                 }}
                 to={`/About`}
             >
-                About
+                ABOUT
+            </NavLink>
+            <NavLink
+                className="link"
+                style={({ isActive }) => {
+                    return {
+                        display: "block",
+                        color: isActive ? "red" : "",
+                    };
+                }}
+                to={`/Products`}
+            >
+                PRODUCTS
+            </NavLink>
+            <NavLink
+                className="link"
+                style={({ isActive }) => {
+                    return {
+                        display: "block",
+                        color: isActive ? "red" : "",
+                    };
+                }}
+                to={`/Services`}
+            >
+                SERVICES
+            </NavLink>
+            <NavLink
+                className="link"
+                style={({ isActive }) => {
+                    return {
+                        display: "block",
+                        color: isActive ? "red" : "",
+                    };
+                }}
+                to={`/ContactUs`}
+            >
+                CONTACT US
             </NavLink>
         </div>
     );

@@ -1,9 +1,14 @@
 .Navbar {
-    background-color: #1a61ee;
-    height: 100px;
+    width: 100%;
+    height: 80px;
     display: flex;
     align-items: center;
+    background-color:#000;
     justify-content: space-between;
-    font-size: 16px;
-    color: white;
 }
+/* .LeftSide {
+    background-color: rgb(228, 32, 32);
+}
+.RightSide {
+    background-color: rgb(228, 32, 32);
+} */

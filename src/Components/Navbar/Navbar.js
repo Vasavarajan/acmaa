@@ -7,8 +7,12 @@ import RightSide from "./RightSide/RightSide";
 function Navbar() {
     return (
         <div className="Navbar">
-            <LeftSide />
-            <RightSide />
+            <div className="LeftSide">
+                <LeftSide />
+            </div>
+            <div className="RightSide">
+                <RightSide />
+            </div>
         </div>
     );
 }

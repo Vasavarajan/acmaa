@@ -1,9 +1,12 @@
 .RightSide {
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    color: white;
+
 }
-.link{
-    padding:20px
+.link {
+    padding: 20px;
+    text-decoration: none;
+    color: #21282E;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
 }
