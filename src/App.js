@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router} from "react-router-dom";
 
 import './App.css'
-import Navbar from "./Components/Navbar";
+import Home from "./pages";
 // import Home from "./Routes/Home";
 // import About from "./Routes/About";
 // import Products from "./Routes/Products";
@@ -32,7 +32,7 @@ function App() {
         //     </Routes>
         // </Router>
         <Router>
-            <Navbar />
+            <Home />
         </Router>
     );
 }
