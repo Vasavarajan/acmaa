@@ -26,17 +26,17 @@ function Navbar({ toggle }) {
                         <BiMenuAltRight />
                     </MobileIcon>
                     <NavMenu>
-                        <NavItems>
+                        {/* <NavItems>
                             <NavLinks to="/">Home</NavLinks>
-                        </NavItems>
+                        </NavItems> */}
                         <NavItems>
                             <NavLinks to="about">About</NavLinks>
                         </NavItems>
                         <NavItems>
-                            <NavLinks to="services">Services</NavLinks>
+                            <NavLinks to="products">Products</NavLinks>
                         </NavItems>
                         <NavItems>
-                            <NavLinks to="products">Products</NavLinks>
+                            <NavLinks to="services">Services</NavLinks>
                         </NavItems>
                         <NavItems>
                             <NavLinks to="contactus">Contact Us</NavLinks>
