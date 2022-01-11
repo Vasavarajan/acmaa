@@ -1,8 +1,6 @@
-import React from "react";
-
-// import "./Navbar.css";
-// import {FaBars } from 'react-icons/fa'
+import React, { useState, useEffect } from "react";
 import { BiMenuAltRight } from "react-icons/bi";
+import { animateScroll as scroll } from "react-scroll";
 
 import {
     Nav,
@@ -17,11 +15,31 @@ import {
 } from "./NavbarElements";
 
 function Navbar({ toggle }) {
+    const [scrollNav, setScrollNav] = useState(false);
+
+    const changeNav = () => {
+        if (window.scrollY >= 80) {
+            setScrollNav(true);
+        } else {
+            setScrollNav(false);
+        }
+    };
+
+    useEffect(() => {
+        window.addEventListener("scroll", changeNav);
+    }, []);
+
+    const toggleHome = () => {
+        scroll.scrollToTop();
+    };
+
     return (
         <>
-            <Nav>
+            <Nav scrollNav={scrollNav}>
                 <NavbarContainer>
-                    <NavLogo to="/">ACMAA</NavLogo>
+                    <NavLogo to="/" onClick={toggleHome}>
+                        ACMAA
+                    </NavLogo>
                     <MobileIcon onClick={toggle}>
                         <BiMenuAltRight />
                     </MobileIcon>
@@ -30,16 +48,52 @@ function Navbar({ toggle }) {
                             <NavLinks to="/">Home</NavLinks>
                         </NavItems> */}
                         <NavItems>
-                            <NavLinks to="about">About</NavLinks>
+                            <NavLinks
+                                to="about"
+                                smooth={true}
+                                duration={500}
+                                spy={true}
+                                exact="true"
+                                offset={-80}
+                            >
+                                About
+                            </NavLinks>
                         </NavItems>
                         <NavItems>
-                            <NavLinks to="products">Products</NavLinks>
+                            <NavLinks
+                                to="products"
+                                smooth={true}
+                                duration={500}
+                                spy={true}
+                                exact="true"
+                                offset={-80}
+                            >
+                                Products
+                            </NavLinks>
                         </NavItems>
                         <NavItems>
-                            <NavLinks to="services">Services</NavLinks>
+                            <NavLinks
+                                to="services"
+                                smooth={true}
+                                duration={500}
+                                spy={true}
+                                exact="true"
+                                offset={-80}
+                            >
+                                Services
+                            </NavLinks>
                         </NavItems>
                         <NavItems>
-                            <NavLinks to="contactus">Contact Us</NavLinks>
+                            <NavLinks
+                                to="signup"
+                                smooth={true}
+                                duration={500}
+                                spy={true}
+                                exact="true"
+                                offset={-80}
+                            >
+                                Sign Up
+                            </NavLinks>
                         </NavItems>
                     </NavMenu>
                     <NavBtn>

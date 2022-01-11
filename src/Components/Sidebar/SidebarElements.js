@@ -62,6 +62,10 @@ export const SidebarLink = styled(LinkS)`
         color: #01bf71;
         transition: 0.2s ease-in-out;
     }
+
+    &.active {
+        color: #01bf71;
+    }
 `;
 
 export const SideBtnWrap = styled.div`

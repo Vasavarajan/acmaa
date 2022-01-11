@@ -19,20 +19,53 @@ function Sidebar({ isOpen, toggle }) {
             </Icon>
             <SidebarWrapper>
                 <SidebarMenu>
-                    <SidebarLink to="/" onClick={toggle}>
+                    {/* <SidebarLink to="/" onClick={toggle}>
                         Home
-                    </SidebarLink>
-                    <SidebarLink to="about" onClick={toggle}>
+                    </SidebarLink> */}
+                    <SidebarLink
+                        to="about"
+                        smooth={true}
+                        duration={500}
+                        spy={true}
+                        exact="true"
+                        offset={-80}
+                        onClick={toggle}
+                        activeClass="active"
+                    >
                         About
                     </SidebarLink>
-                    <SidebarLink to="services" onClick={toggle}>
-                        Services
-                    </SidebarLink>
-                    <SidebarLink to="products" onClick={toggle}>
+                    <SidebarLink
+                        to="products"
+                        onClick={toggle}
+                        smooth={true}
+                        duration={500}
+                        spy={true}
+                        exact="true"
+                        offset={-80}
+                    >
                         Products
                     </SidebarLink>
-                    <SidebarLink to="contactus" onClick={toggle}>
-                        Contact Us
+                    <SidebarLink
+                        to="services"
+                        onClick={toggle}
+                        smooth={true}
+                        duration={500}
+                        spy={true}
+                        exact="true"
+                        offset={-80}
+                    >
+                        Services
+                    </SidebarLink>
+                    <SidebarLink
+                        to="signup"
+                        onClick={toggle}
+                        smooth={true}
+                        duration={500}
+                        spy={true}
+                        exact="true"
+                        offset={-80}
+                    >
+                        Sign Up
                     </SidebarLink>
                 </SidebarMenu>
                 <SideBtnWrap>
