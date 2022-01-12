@@ -7,8 +7,6 @@ import {
     SidebarWrapper,
     SidebarMenu,
     SidebarLink,
-    SideBtnWrap,
-    SidebarRoute,
 } from "./SidebarElements";
 
 function Sidebar({ isOpen, toggle }) {
@@ -68,9 +66,6 @@ function Sidebar({ isOpen, toggle }) {
                         Sign Up
                     </SidebarLink>
                 </SidebarMenu>
-                <SideBtnWrap>
-                    <SidebarRoute to="/signin">Sign In</SidebarRoute>
-                </SideBtnWrap>
             </SidebarWrapper>
         </SidebarContainer>
     );

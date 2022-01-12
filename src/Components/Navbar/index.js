@@ -10,8 +10,6 @@ import {
     NavMenu,
     NavItems,
     NavLinks,
-    NavBtn,
-    NavBtnLink,
 } from "./NavbarElements";
 
 function Navbar({ toggle }) {
@@ -96,9 +94,6 @@ function Navbar({ toggle }) {
                             </NavLinks>
                         </NavItems>
                     </NavMenu>
-                    <NavBtn>
-                        <NavBtnLink to="/signin">Sign In</NavBtnLink>
-                    </NavBtn>
                 </NavbarContainer>
             </Nav>
         </>
