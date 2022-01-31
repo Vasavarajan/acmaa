@@ -11,6 +11,7 @@ import {
 } from "../Components/InfoSection/Data";
 import Services from "../Components/Services";
 import Footer from "../Components/Footer";
+import Card from "../Components/Card";
 
 function Home() {
     const [isOpen, setIsOpen] = useState(false);
@@ -28,6 +29,9 @@ function Home() {
             <InfoSection {...homeObjTwo} />
             <Services />
             <InfoSection {...homeObjThree} />
+            <Card />
+            <Card />
+            <Card />
             <Footer />
         </>
     );
