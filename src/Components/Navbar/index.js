@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { BiMenuAltRight } from "react-icons/bi";
 import { animateScroll as scroll } from "react-scroll";
 
@@ -10,22 +10,25 @@ import {
     NavMenu,
     NavItems,
     NavLinks,
+    LogoIcon,
 } from "./NavbarElements";
 
+import Logo from "../../Assets/Images/COMPANY LOGO.png";
+
 function Navbar({ toggle }) {
-    const [scrollNav, setScrollNav] = useState(false);
+    // const [scrollNav, setScrollNav] = useState(false);
 
-    const changeNav = () => {
-        if (window.scrollY >= 80) {
-            setScrollNav(true);
-        } else {
-            setScrollNav(false);
-        }
-    };
+    // const changeNav = () => {
+    //     if (window.scrollY >= 80) {
+    //         setScrollNav(true);
+    //     } else {
+    //         setScrollNav(false);
+    //     }
+    // };
 
-    useEffect(() => {
-        window.addEventListener("scroll", changeNav);
-    }, []);
+    // useEffect(() => {
+    //     window.addEventListener("scroll", changeNav);
+    // }, []);
 
     const toggleHome = () => {
         scroll.scrollToTop();
@@ -33,9 +36,10 @@ function Navbar({ toggle }) {
 
     return (
         <>
-            <Nav scrollNav={scrollNav}>
+            <Nav>
                 <NavbarContainer>
                     <NavLogo to="/" onClick={toggleHome}>
+                        <LogoIcon src={Logo} />
                         ACMAA
                     </NavLogo>
                     <MobileIcon onClick={toggle}>

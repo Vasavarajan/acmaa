@@ -57,14 +57,18 @@ export const SidebarLink = styled(LinkS)`
     transition: 0.2s ease-in-out;
     color: #fff;
     cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 500;
 
     &:hover {
-        color: #01bf71;
+        color: #1085e4;
         transition: 0.2s ease-in-out;
     }
 
     &.active {
-        color: #01bf71;
+        color: #1085e4;
+        background: #fff;
+        /* border-bottom: 2px solid #1085e4; */
     }
 `;
 

@@ -1,4 +1,5 @@
 import svg1 from "../../Assets/Images/svg1.svg";
+import png1 from "../../Assets/Images/heroImg.png";
 
 export const homeObjOne = {
     id: "about",
@@ -11,7 +12,7 @@ export const homeObjOne = {
         "Get access to our exclusive app that allows you to send unlimited transactions without getting charged any fees.",
     buttonLabel: "Get Started",
     imgStart: false,
-    img: svg1,
+    img: png1,
     alt: "car",
     dark: true,
     primary: true,
@@ -29,7 +30,7 @@ export const homeObjTwo = {
         "Get access to our exclusive app that allows you to send unlimited transactions without getting charged any fees.",
     buttonLabel: "Learn more",
     imgStart: true,
-    img: svg1,
+    img: png1,
     alt: "car",
     dark: false,
     primary: false,
