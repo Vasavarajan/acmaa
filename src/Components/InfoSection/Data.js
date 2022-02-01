@@ -1,4 +1,4 @@
-import svg1 from "../../Assets/images/svg1.svg";
+import svg1 from "../../Assets/Images/svg1.svg";
 
 export const homeObjOne = {
     id: "about",

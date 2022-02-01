@@ -1,6 +1,6 @@
 import React from "react";
 
-import Icon1 from '../../Assets/images/svg1.svg'
+import Icon1 from '../../Assets/Images/svg1.svg'
 import {
     ServicesContainer,
     ServicesWrapper,

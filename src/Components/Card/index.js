@@ -1,6 +1,6 @@
 import React from "react";
 
-import Icon1 from "../../Assets/images/CRANK_SHAFT_R.H.png";
+import Img from "../../Assets/Images/CRANK_SHAFT_R.H.png";
 import {
     CardContainer,
     CardImg,
@@ -13,12 +13,14 @@ import {
 function Card() {
     return (
         <CardContainer>
-            <CardImg src={Icon1} />
+            <CardImg src={Img} />
             <CardContent>
                 <CardH2>Reduce expences</CardH2>
                 <CardP>
                     We help reduce your fees and increase your overall revenue.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus beatae neque aliquam ex vero unde fugiat mollitia magni pariatur! Ad nesciunt saepe iste porro temporibus.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Natus beatae neque aliquam ex vero unde fugiat mollitia
+                    magni pariatur! Ad nesciunt saepe iste porro temporibus.
                 </CardP>
                 <CardLink>ReadMore</CardLink>
             </CardContent>
