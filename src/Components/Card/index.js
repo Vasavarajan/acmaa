@@ -1,6 +1,6 @@
 import React from "react";
 
-import Img from "../../Assets/Images/CRANK_SHAFT_R.H.png";
+import Img from "../../Assets/Images/MULTI SPINDLE DRILL HEAD2 .png";
 import {
     CardContainer,
     CardImg,
