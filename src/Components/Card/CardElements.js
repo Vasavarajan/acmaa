@@ -5,7 +5,7 @@ export const CardImg = styled.img`
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    height: 400px;
+    height: 300px;
     transition: all 0.5s ease-in-out;
 `;
 
@@ -28,11 +28,11 @@ export const CardContainer = styled.div`
     justify-content: flex-start;
     align-items: center;
     border-radius: 20px;
-    background: linear-gradient(135deg, #d41e31, #491f8f);
+    background: linear-gradient(135deg, #c1f9ff, #1085e4);
 
     &:hover ${CardImg} {
-        left: 80%;
-        height: 500px;
+        left: 75%;
+        height: 350px;
     }
 
     &:hover ${CardContent} {

@@ -1,6 +1,8 @@
 import React from "react";
 
-import Img from "../../Assets/Images/MULTI SPINDLE DRILL HEAD2 .png";
+import Img from "../../Assets/Images/CRANK CASE R.H OIL PASSAGE LTM 1.png";
+// import Img from "../../Assets/Images/Clients_Logos/WHEELS_INDIA (2).png";
+
 import {
     CardContainer,
     CardImg,
