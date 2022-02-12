@@ -12,6 +12,7 @@ import {
 import Services from "../Components/Services";
 import Footer from "../Components/Footer";
 import Card from "../Components/Card";
+// import Marquee from "../Components/Marquee";
 
 function Home() {
     const [isOpen, setIsOpen] = useState(false);
@@ -33,6 +34,7 @@ function Home() {
             <Card />
             <Card />
             <Card />
+            {/* <Marquee /> */}
             <Footer />
         </>
     );
