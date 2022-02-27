@@ -17,18 +17,27 @@ function Sidebar({ isOpen, toggle }) {
             </Icon>
             <SidebarWrapper>
                 <SidebarMenu>
-                    {/* <SidebarLink to="/" onClick={toggle}>
+                    
+                    <SidebarLink
+                        to="home"
+                        smooth={true}
+                        duration={500}
+                        spy={true}
+                        exact="true"
+                        offset={-60}
+                        onClick={toggle}
+                    >
                         Home
-                    </SidebarLink> */}
+                    </SidebarLink>
                     <SidebarLink
                         to="about"
                         smooth={true}
                         duration={500}
                         spy={true}
                         exact="true"
-                        offset={-80}
+                        offset={-60}
                         onClick={toggle}
-                        activeClass="active"
+                        // activeClass="active"
                     >
                         About
                     </SidebarLink>
@@ -39,7 +48,7 @@ function Sidebar({ isOpen, toggle }) {
                         duration={500}
                         spy={true}
                         exact="true"
-                        offset={-80}
+                        offset={-60}
                     >
                         Products
                     </SidebarLink>
@@ -50,20 +59,20 @@ function Sidebar({ isOpen, toggle }) {
                         duration={500}
                         spy={true}
                         exact="true"
-                        offset={-80}
+                        offset={-60}
                     >
                         Services
                     </SidebarLink>
                     <SidebarLink
-                        to="signup"
+                        to="contactUs"
                         onClick={toggle}
                         smooth={true}
                         duration={500}
                         spy={true}
                         exact="true"
-                        offset={-80}
+                        offset={-60}
                     >
-                        Sign Up
+                        Contact Us
                     </SidebarLink>
                 </SidebarMenu>
             </SidebarWrapper>

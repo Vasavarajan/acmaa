@@ -51,12 +51,24 @@ function Navbar({ toggle }) {
                         </NavItems> */}
                         <NavItems>
                             <NavLinks
+                                to="home"
+                                smooth={true}
+                                duration={500}
+                                spy={true}
+                                exact="true"
+                                offset={-60}
+                            >
+                                Home
+                            </NavLinks>
+                        </NavItems>
+                        <NavItems>
+                            <NavLinks
                                 to="about"
                                 smooth={true}
                                 duration={500}
                                 spy={true}
                                 exact="true"
-                                offset={-80}
+                                offset={-60}
                             >
                                 About
                             </NavLinks>
@@ -68,7 +80,7 @@ function Navbar({ toggle }) {
                                 duration={500}
                                 spy={true}
                                 exact="true"
-                                offset={-80}
+                                offset={-60}
                             >
                                 Products
                             </NavLinks>
@@ -80,21 +92,21 @@ function Navbar({ toggle }) {
                                 duration={500}
                                 spy={true}
                                 exact="true"
-                                offset={-80}
+                                offset={-60}
                             >
                                 Services
                             </NavLinks>
                         </NavItems>
                         <NavItems>
                             <NavLinks
-                                to="signup"
+                                to="contactUs"
                                 smooth={true}
                                 duration={500}
                                 spy={true}
                                 exact="true"
-                                offset={-80}
+                                offset={-60}
                             >
-                                Sign Up
+                                Contact Us
                             </NavLinks>
                         </NavItems>
                     </NavMenu>
