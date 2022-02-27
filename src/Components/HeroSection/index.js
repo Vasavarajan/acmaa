@@ -2,19 +2,15 @@ import React, { useState } from "react";
 
 import {
     HeroContainer,
-    HeroWrapper,
-    Column,
+    Content,
     HeroH1,
-    HeroP,
     HeroBtnWrapper,
     ArrowForward,
     ArrowRight,
-    ImgWrap,
-    Img,
 } from "./HeroElements";
 
 import { Button } from "../ButtonElements";
-import img from "../../Assets/Images/heroImg.png";
+
 
 
 function HeroSection() {
@@ -26,15 +22,15 @@ function HeroSection() {
 
     return (
         <HeroContainer id="home">
-            <HeroWrapper>
-                <Column>
-                    <HeroH1>SPM Manufactures</HeroH1>
-                    <HeroP>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, modi, nesciunt reprehenderit sapiente ad voluptates consequuntur voluptatibus consectetur consequatur quos totam maxime excepturi blanditiis, molestias expedita facere! Nisi deserunt natus voluptatem iure incidunt porro omnis dignissimos ipsum laudantium rem dolorum nulla, eos tempore temporibus repellat, doloremque delectus. Recusandae, odio provident.
-                    </HeroP>
+                <Content>
+                    <HeroH1>
+                        Manufacturer Of Special Purpose Machines & Industrial
+                        Automation Systems
+                    </HeroH1>
+
                     <HeroBtnWrapper>
                         <Button
-                            to="signup"
+                            to="contactUs"
                             onMouseEnter={onHover}
                             onMouseLeave={onHover}
                             primary="true"
@@ -43,19 +39,13 @@ function HeroSection() {
                             duration={500}
                             spy={true}
                             exact="true"
-                            offset={-80}
+                            offset={-60}
                         >
-                            Contact US
+                            Contact Us
                             {hover ? <ArrowForward /> : <ArrowRight />}
                         </Button>
                     </HeroBtnWrapper>
-                </Column>
-                <Column>
-                    <ImgWrap>
-                        <Img src={img} alt='machine' />
-                    </ImgWrap>
-                </Column>
-            </HeroWrapper>
+                </Content>
         </HeroContainer>
     );
 }

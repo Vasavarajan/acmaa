@@ -31,12 +31,13 @@ export const NavLogo = styled(LinkR)`
     color: #1085e4; // company logo color
     justify-self: flex-start;
     cursor: pointer;
+    letter-spacing: 1px;
     font-size: 28px;
     line-height: 36px;
     display: flex;
     align-items: center;
     margin-left: 16px;
-    font-weight: bold;
+    font-weight: 500;
     text-decoration: none;
 `;
 
@@ -78,13 +79,19 @@ export const NavItems = styled.li`
 export const NavLinks = styled(LinkS)`
     color: #88c2f2;
     display: flex;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: normal;
     align-items: center;
     text-decoration: none;
+    letter-spacing: 1px;
     padding: 0 16px;
     height: 100%;
     cursor: pointer;
 
     &.active {
+        font-weight: 600;
+
         border-bottom: 2px solid #1085e4;
     }
 `;

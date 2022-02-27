@@ -15,6 +15,7 @@ import Footer from "../Components/Footer";
 import ContactUs from "../Components/ContactUsSection";
 // import Marquee from "../Components/Marquee";
 
+
 function Home() {
     const [isOpen, setIsOpen] = useState(false);
 

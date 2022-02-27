@@ -1,18 +1,24 @@
 import styled from "styled-components";
-import { MdArrowForward, MdArrowRight } from "react-icons/md";
+import { MdArrowForward, MdKeyboardArrowRight } from "react-icons/md";
+import img from "../../Assets/Images/HERO_IMAGE.jpg";
 
 export const HeroContainer = styled.div`
-    background: #fff; //#010606
+    background: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+        ),
+        url(${img});
+    height: calc(100vh - 60px);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 30px;
     z-index: 1;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    min-height: 850px;
-    max-height: 1280px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
     @media screen and (max-width: 991px) {
         padding-right: 30px;
@@ -20,56 +26,36 @@ export const HeroContainer = styled.div`
     }
 `;
 
-export const HeroWrapper = styled.div`
-    display: flex;
-    max-width: 1100px;
-    flex-wrap: wrap;
-    align-content: stretch;
-    align-items: center;
-
-    
-`;
-
-export const Column = styled.div`
-    margin-bottom: 15px;
+export const Content = styled.div`
+    position: absolute;
+    margin: 0 24px;
     padding-right: 15px;
     padding-left: 15px;
     flex: 1;
-    max-width: 50%;
-    flex-basis: 50%;
+    background: rgb(0 0 0 / 70%);
+    padding: 25px;
+    border-radius: 15px;
 
     @media screen and (max-width: 800px) {
         max-width: 100%;
-        flex-basis: 100%;
     }
 `;
 
 export const HeroH1 = styled.h1`
-    color: #1085e4;
-    font-size: 48px;
+    color: #e1f0fc;
+    font-size: 28px;
+    font-weight: normal;
+    line-height: 36px;
     text-align: center;
 
     @media screen and (max-width: 768px) {
-        font-size: 40px;
+        font-size: 24px;
+        line-height: 32px;
     }
 
     @media screen and (max-width: 480px) {
-        font-size: 32px;
-    }
-`;
-
-export const HeroP = styled.p`
-    margin-top: 24px;
-    color: #121212;
-    font-size: 24px;
-    text-align: center;
-
-    @media screen and (max-width: 800px) {
-        font-size: 21px;
-    }
-
-    @media screen and (max-width: 480px) {
-        font-size: 18px;
+        font-size: 24px;
+        line-height: 32px;
     }
 `;
 
@@ -84,17 +70,7 @@ export const ArrowForward = styled(MdArrowForward)`
     margin-left: 8px;
     font-size: 20px;
 `;
-export const ArrowRight = styled(MdArrowRight)`
+export const ArrowRight = styled(MdKeyboardArrowRight)`
     margin-left: 8px;
     font-size: 20px;
-`;
-
-export const ImgWrap = styled.div`
-    max-width: 100%;
-`;
-export const Img = styled.img`
-    max-width: 100%;
-    border: 0;
-    vertical-align: middle;
-    display: inline-block;
 `;

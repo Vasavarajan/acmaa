@@ -2,12 +2,15 @@ import styled from "styled-components";
 import { Link } from "react-scroll";
 
 export const Button = styled(Link)`
-    border-radius: 50px;
+    border-radius: 20px;
     background: ${({ primary }) => (primary ? "#1085e4" : "#010606")};
     white-space: nowrap;
-    padding: ${({ big }) => (big ? "14px 48px" : "12px 30px")};
+    /* padding: ${({ big }) => (big ? "14px 48px" : "12px 30px")}; */
+    padding-left: 24px;
+    padding-right: 16px;
+    height:40px;
     color: ${({ dark }) => (dark ? "#fff" : "#fff")};
-    font-size: ${({ fontBig }) => (fontBig ? "24px" : "20px")};
+    font-size: ${({ fontBig }) => (fontBig ? "22px" : "18px")};
     outline: none;
     border: none;
     cursor: pointer;
