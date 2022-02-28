@@ -4,17 +4,14 @@ import Navbar from "../Components/Navbar";
 import Sidebar from "../Components/Sidebar";
 import HeroSection from "../Components/HeroSection";
 import InfoSection from "../Components/InfoSection";
-import {
-    homeObjOne,
-    homeObjTwo,
-    homeObjThree,
-} from "../Components/InfoSection/Data";
+import {  homeObjTwo } from "../Components/InfoSection/Data";
 import Services from "../Components/Services";
 import Footer from "../Components/Footer";
 // import Card from "../Components/Card";
 import ContactUs from "../Components/ContactUsSection";
+import MapSection from "../Components/MapSection";
+import DataSection from "../Components/DataSection";
 // import Marquee from "../Components/Marquee";
-
 
 function Home() {
     const [isOpen, setIsOpen] = useState(false);
@@ -28,12 +25,11 @@ function Home() {
             <Sidebar isOpen={isOpen} toggle={toggle} />
             <Navbar toggle={toggle} />
             <HeroSection />
-
-            <InfoSection {...homeObjOne} />
+            <DataSection />
+            <MapSection />
             <InfoSection {...homeObjTwo} />
 
             <Services />
-            <InfoSection {...homeObjThree} />
             <ContactUs />
             {/* <Card />
             <Card />

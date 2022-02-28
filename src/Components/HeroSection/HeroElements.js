@@ -5,8 +5,8 @@ import img from "../../Assets/Images/HERO_IMAGE.jpg";
 export const HeroContainer = styled.div`
     background: linear-gradient(
             to right,
-            rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.3)
         ),
         url(${img});
     height: calc(100vh - 60px);
@@ -28,9 +28,8 @@ export const HeroContainer = styled.div`
 
 export const Content = styled.div`
     position: absolute;
-    margin: 0 24px;
-    padding-right: 15px;
-    padding-left: 15px;
+    margin:24px;
+    max-width:1440px;
     flex: 1;
     background: rgb(0 0 0 / 70%);
     padding: 25px;
@@ -43,14 +42,14 @@ export const Content = styled.div`
 
 export const HeroH1 = styled.h1`
     color: #e1f0fc;
-    font-size: 28px;
+    font-size: 40px;
     font-weight: normal;
-    line-height: 36px;
+    line-height: 48px;
     text-align: center;
 
     @media screen and (max-width: 768px) {
-        font-size: 24px;
-        line-height: 32px;
+        font-size: 32px;
+        line-height: 40px;
     }
 
     @media screen and (max-width: 480px) {
