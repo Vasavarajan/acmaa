@@ -11,7 +11,7 @@ import Footer from "../Components/Footer";
 // import ContactUs from "../Components/ContactUsSection";
 import MapSection from "../Components/MapSection";
 import DataSection from "../Components/DataSection";
-// import Marquee from "../Components/Marquee";
+import ClientSection from "../Components/ClientSection";
 
 function Home() {
     const [isOpen, setIsOpen] = useState(false);
@@ -29,11 +29,11 @@ function Home() {
             <MapSection />
             <InfoSection {...homeObjTwo} />
             <Services />
+            <ClientSection />
             {/* <ContactUs /> */}
             {/* <Card />
             <Card />
             <Card /> */}
-            {/* <Marquee /> */}
             <Footer />
         </>
     );

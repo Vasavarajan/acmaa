@@ -5,6 +5,8 @@ export const MapContainer = styled.div`
     display: flex;
     flex-direction: column;
     place-items: center;
+    padding-top: 24px;
+
     /* height: 100vh; */
 `;
 export const ImgWrap = styled.div`
