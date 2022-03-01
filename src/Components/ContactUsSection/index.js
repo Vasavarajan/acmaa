@@ -1,7 +1,6 @@
 import React from 'react'
 
 import { ContactContainer } from './ContactUsElements';
-import Counter from '../Counter'
 
 const ContactUs = () => {
   return (
@@ -14,7 +13,6 @@ const ContactUs = () => {
               allowfullscreen=""
               loading="lazy"
           ></iframe>
-          <Counter  end={21} suffix="+" />
       </ContactContainer>
   );
 }

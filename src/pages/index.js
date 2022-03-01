@@ -28,7 +28,6 @@ function Home() {
             <DataSection />
             <MapSection />
             <InfoSection {...homeObjTwo} />
-
             <Services />
             <ContactUs />
             {/* <Card />
