@@ -1,7 +1,7 @@
 import React from "react";
 
 import { MapContainer, ImgWrap, Img, HeadLine } from "./MapElements";
-import img from '../../Assets/Images/MAP1.png'
+import img from '../../Assets/Images/MAP.png'
 
 const MapSection = () => {
     return (

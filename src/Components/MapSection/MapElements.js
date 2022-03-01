@@ -5,6 +5,7 @@ export const MapContainer = styled.div`
     display: flex;
     flex-direction: column;
     place-items: center;
+    /* height: 100vh; */
 `;
 export const ImgWrap = styled.div`
     max-width: 1440px;
@@ -19,10 +20,17 @@ export const ImgWrap = styled.div`
 `;
 
 export const Img = styled.img`
-    width: 100%;
-    /* height: 100%; */
+    width: 80%;
+    border: 2px solid #e1f0fc;
 
-    /* padding: 16px; */
+    padding: 16px;
+
+    @media screen and (max-width: 768px) {
+        width: 100%;
+    }
+    @media screen and (min-width: 1440px) {
+        width: 100%;
+    }
 `;
 
 export const HeadLine = styled.h1`
@@ -53,8 +61,8 @@ export const HeadLine = styled.h1`
         padding: 0 24px 16px 24px;
     }
     @media screen and (max-width: 360px) {
-        font-size: 18px;
-        line-height: 26px;
+        font-size: 16px;
+        line-height: 24px;
         padding: 0 24px 16px 24px;
     }
 `;

@@ -31,7 +31,7 @@ export const Content = styled.div`
     margin:24px;
     max-width:1440px;
     flex: 1;
-    background: rgb(0 0 0 / 70%);
+    background: rgb(0 0 0 / 80%);
     padding: 25px;
     border-radius: 15px;
 

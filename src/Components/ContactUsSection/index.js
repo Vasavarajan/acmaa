@@ -14,7 +14,7 @@ const ContactUs = () => {
               allowfullscreen=""
               loading="lazy"
           ></iframe>
-          <Counter className="count" end={21} suffix="M+" />
+          <Counter  end={21} suffix="+" />
       </ContactContainer>
   );
 }
