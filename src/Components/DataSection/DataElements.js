@@ -12,12 +12,14 @@ export const DataContainer = styled.div`
 export const Datarapper = styled.div`
     /* height: 100%; */
     max-width: 1440px;
+    width: 100%;
     display: grid;
     margin: 0 auto;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: center;
     grid-gap: 50px;
-    padding: 0 50px;
+    padding: 20px 50px;
+    justify-content: space-between;
 
     @media screen and (max-width: 850px) {
         grid-template-columns: 1fr 1fr;
@@ -25,7 +27,7 @@ export const Datarapper = styled.div`
 
     @media screen and (max-width: 480px) {
         grid-template-columns: 1fr;
-        padding: 0 20px;
+        padding: 10px 20px;
     }
 `;
 export const Data = styled.div`
@@ -41,6 +43,14 @@ export const Data = styled.div`
         transform: scale(1.05);
         transition: all 0.2s ease-in-out;
     }
+
+    @media screen and (max-width: 850px) {
+        height: 200px;
+    }
+
+    @media screen and (max-width: 480px) {
+        height: 150px;
+    }
 `;
 
 export const ImgWrap = styled.div`
@@ -51,6 +61,14 @@ export const ImgWrap = styled.div`
 export const Img = styled.img`
     /* height: 100%; */
     width: 100px;
+
+    @media screen and (max-width: 850px) {
+        width: 80px;
+    }
+
+    @media screen and (max-width: 480px) {
+        width: 70px;
+    }
 `;
 export const Title = styled.h1`
     font-size: 24px;

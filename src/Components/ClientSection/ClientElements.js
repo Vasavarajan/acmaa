@@ -2,26 +2,69 @@ import styled from "styled-components";
 
 export const ClientContainer = styled.div`
     background: #f5fbff;
+    
     display: flex;
     justify-content: center;
     align-items: center;
 `;
 export const ClientWrapper = styled.div`
     max-width: 1440px;
+    display: flex;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+
 `;
-export const ClientTitle = styled.div``;
-export const ClientLogos = styled.div``;
-export const ClientList = styled.div``;
+export const ClientTitle = styled.h1`
+    color: #02121f;
+`;
+
+export const ClientList = styled.div`
+    width: 100%;
+    /* max-width: 1440px; */
+    padding-top: 24px;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width: 850px) {
+        padding-top: 20px;
+    }
+
+    @media screen and (max-width: 480px) {
+        padding-top: 16px;
+    }
+`;
 export const ImgWrap = styled.div`
-    margin: 16px;
+    margin: 24px;
+    padding: 16px 24px;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width: 850px) {
+        padding: 16px 20px;
+    }
+
+    @media screen and (max-width: 480px) {
+        padding: 16px 0;
+    }
 `;
 export const Img = styled.img`
-    height: 50px;
+    height: 70px;
     filter: grayscale(100%);
 
     &:hover {
-        /* transform: scale(1.05);
-        transition: all 0.2s ease-in-out; */
+        transform: scale(1.05);
+        transition: all 0.2s ease-in-out;
         filter: grayscale(0%);
+    }
+
+    @media screen and (max-width: 850px) {
+        height: 60px;
+    }
+
+    @media screen and (max-width: 480px) {
+        height: 50px;
     }
 `;
