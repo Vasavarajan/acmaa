@@ -10,6 +10,7 @@ import {
     Img,
 } from "./ClientElements";
 
+import Img0 from "../../Assets/Images/Clients_logo/0.png";
 import Img1 from "../../Assets/Images/Clients_logo/1.png";
 import Img2 from "../../Assets/Images/Clients_logo/2.png";
 import Img3 from "../../Assets/Images/Clients_logo/3.png";
@@ -45,11 +46,14 @@ const ClientSection = () => {
                 <ClientList>
                     <Marquee
                         direction="left"
-                        speed={30}
-                        // pauseOnHover={true}
+                        speed={50}
+                        pauseOnHover={true}
                         gradientWidth={50}
                         gradientColor={[245, 251, 255]}
                     >
+                        <ImgWrap>
+                            <Img src={Img0} />
+                        </ImgWrap>
                         <ImgWrap>
                             <Img src={Img1} />
                         </ImgWrap>

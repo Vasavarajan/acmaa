@@ -19,6 +19,7 @@ export const ClientWrapper = styled.div`
 `;
 export const ClientTitle = styled.h1`
     color: #02121f;
+    font-size:40px;
 `;
 
 export const ClientList = styled.div`
