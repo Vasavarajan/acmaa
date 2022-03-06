@@ -1,11 +1,11 @@
 import React from "react";
 
 import { MapContainer, ImgWrap, Img, HeadLine } from "./MapElements";
-import img from '../../Assets/Images/MAP.png'
+import img from "../../Assets/Images/MAP.png";
 
 const MapSection = () => {
     return (
-        <MapContainer id="about">
+        <MapContainer>
             <ImgWrap>
                 <Img src={img} alt="World Map" />
             </ImgWrap>

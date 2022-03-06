@@ -23,15 +23,18 @@ export const ImgWrap = styled.div`
 
 export const Img = styled.img`
     width: 80%;
-    border: 2px solid #e1f0fc;
+    border: 2px solid #88c2f2;
+    border-radius: 45px;
 
     padding: 16px;
 
     @media screen and (max-width: 768px) {
         width: 100%;
+        border-radius: 25px;
     }
     @media screen and (min-width: 1440px) {
         width: 100%;
+        border-radius: 50px;
     }
 `;
 

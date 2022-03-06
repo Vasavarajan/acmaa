@@ -16,7 +16,7 @@ import Fixtures from "../../Assets/Images/Icons/Fixtures.png";
 
 const DataSection = () => {
     return (
-        <DataContainer id="about">
+        <DataContainer>
             <Datarapper>
                 <Data>
                     <ImgWrap>

@@ -72,14 +72,14 @@ export const Img = styled.img`
 `;
 export const Title = styled.h1`
     font-size: 24px;
-    line-height:32px;
+    line-height: 32px;
     color: #02121f;
     margin-bottom: 10px;
     text-align: center;
     font-weight: normal;
     height: 20%;
 
-    /* @media screen and (max-width: 480px) {
-        font-size: 16px;
-    } */
+    @media screen and (max-width: 850px) {
+        white-space: nowrap;
+    }
 `;
