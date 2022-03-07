@@ -10,8 +10,8 @@ import { homeObjTwo } from "../Components/InfoSection/Data";
 // import Services from "../Components/Services";
 import Footer from "../Components/Footer";
 import ContactUs from "../Components/ContactUsSection";
+import ContactUs2 from "../Components/ContactUsSectionCopy";
 import ClientSection from "../Components/ClientSection";
-import LocationSection from "../Components/LocationSection";
 
 function Home() {
     const [isOpen, setIsOpen] = useState(false);
@@ -29,8 +29,8 @@ function Home() {
             <InfoSection {...homeObjTwo} />
             {/* <Services /> */}
             <ClientSection />
-            {/* <LocationSection /> */}
             <ContactUs />
+            <ContactUs2 />
             <Footer />
         </>
     );

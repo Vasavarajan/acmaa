@@ -19,7 +19,17 @@ export const ClientWrapper = styled.div`
 `;
 export const ClientTitle = styled.h1`
     color: #02121f;
-    font-size:40px;
+    font-size: 40px;
+    line-height: 32px;
+
+    @media screen and (max-width: 800px) {
+        font-size: 36px;
+        line-height: 28px;
+    }
+    @media screen and (max-width: 400px) {
+        font-size: 32px;
+        line-height: 24px;
+    }
 `;
 
 export const ClientList = styled.div`

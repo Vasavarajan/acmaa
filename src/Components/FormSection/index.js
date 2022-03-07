@@ -10,7 +10,12 @@ import {
     Input,
     FormControl,
     Error,
+    // HeroBtnWrapper,
+    // ArrowForward,
+    // ArrowRight,
 } from "./FormElements";
+// import { Button } from "../ButtonElements";
+
 
 const initialValues = {
     name: "",
@@ -19,33 +24,11 @@ const initialValues = {
     phoneNumber: "",
     message: "",
 };
+
 const onSubmit = (values) => {
     alert(JSON.stringify(values, null, 2));
 };
-// const validate = (values) => {
-//     let ErrorMessages = {};
 
-//     if (!values.name) {
-//         ErrorMessages.name = "This field is required";
-//     }
-//     if (!values.email) {
-//         ErrorMessages.email = "This field is required";
-//     } else if (
-//         !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)
-//     ) {
-//         ErrorMessages.email = "Invalid Email Address";
-//     }
-//     if (!values.companyName) {
-//         ErrorMessages.companyName = "This field is required";
-//     }
-//     if (!values.phoneNumber) {
-//         ErrorMessages.phoneNumber = "This field is required";
-//     }
-//     if (!values.message) {
-//         ErrorMessages.message = "This field is required";
-//     }
-//     return ErrorMessages;
-// };
 const phoneRegExp =
     /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
 
@@ -63,14 +46,12 @@ const validationSchema = Yup.object({
 });
 
 const FormSection = () => {
-    // Pass the useFormik() hook initial form values and a submit function that will
-    // be called when the form is submitted
-    // const formik = useFormik({
-    //     initialValues,
-    //     onSubmit,
-    //     // validate,
-    //     validationSchema,
-    // });
+    // const [hover, setHover] = useState(false);
+
+    // const onHover = () => {
+    //     setHover(!hover);
+    // };
+    
     return (
         <FormikContainer
             initialValues={initialValues}
@@ -79,45 +60,63 @@ const FormSection = () => {
         >
             <FormContainer>
                 <FormControl>
-                    <Label htmlFor="name">Name</Label>
+                    <Label htmlFor="name">Name :</Label>
                     <Input id="name" name="name" type="text" />
                     <ErrorMessage name="name">
                         {(errorMsg) => <Error>{errorMsg}</Error>}
                     </ErrorMessage>
                 </FormControl>
                 <FormControl>
-                    <Label htmlFor="email">E-mail</Label>
+                    <Label htmlFor="email">Email :</Label>
                     <Input id="email" name="email" type="email" />
                     <ErrorMessage name="email">
                         {(errorMsg) => <Error>{errorMsg}</Error>}
                     </ErrorMessage>
                 </FormControl>
                 <FormControl>
-                    <Label htmlFor="companyName">Company Name</Label>
+                    <Label htmlFor="companyName">Company Name :</Label>
                     <Input id="companyName" name="companyName" type="text" />
                     <ErrorMessage name="companyName">
                         {(errorMsg) => <Error>{errorMsg}</Error>}
                     </ErrorMessage>
                 </FormControl>
                 <FormControl>
-                    <Label htmlFor="phoneNumber">Phone Number</Label>
+                    <Label htmlFor="phoneNumber">Phone Number :</Label>
                     <Input id="phoneNumber" name="phoneNumber" type="tel" />
                     <ErrorMessage name="phoneNumber">
                         {(errorMsg) => <Error>{errorMsg}</Error>}
                     </ErrorMessage>
                 </FormControl>
                 <FormControl>
-                    <Label htmlFor="message">Message</Label>
+                    <Label htmlFor="message">Message :</Label>
                     <Input
                         component="textarea"
                         id="message"
                         name="message"
                         type="text"
+                        rows="5"
                     />
                     <ErrorMessage name="message">
                         {(errorMsg) => <Error>{errorMsg}</Error>}
                     </ErrorMessage>
                 </FormControl>
+                {/* <HeroBtnWrapper>
+                    <Button
+                        type="submit"
+                        onMouseEnter={onHover}
+                        onMouseLeave={onHover}
+                        primary="true"
+                        dark="true"
+                        smooth={true}
+                        duration={500}
+                        spy={true}
+                        exact="true"
+                        offset={-60}
+                    >
+                        Send
+                        {hover ? <ArrowForward /> : <ArrowRight />}
+                    </Button>
+                </HeroBtnWrapper> */}
 
                 <button type="submit">Submit</button>
             </FormContainer>
