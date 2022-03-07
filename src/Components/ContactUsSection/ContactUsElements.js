@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ContactContainer = styled.div`
-    background: #02121f;
+    background: #fff;
     /* width: 100%;
     align-items: center;
     justify-content: center;
