@@ -29,7 +29,7 @@ function Home() {
             <InfoSection {...homeObjTwo} />
             {/* <Services /> */}
             <ClientSection />
-            <ContactUs />
+            {/* <ContactUs /> */}
             <ContactUs2 />
             <Footer />
         </>

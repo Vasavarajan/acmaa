@@ -15,6 +15,7 @@ export const HeroContainer = styled.div`
     justify-content: center;
     align-items: center;
     z-index: 1;
+    max-height:900px;
 
     background-position: center;
     background-repeat: no-repeat;
