@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { ErrorMessage } from "formik";
 
 import * as Yup from "yup";
@@ -10,12 +10,11 @@ import {
     Input,
     FormControl,
     Error,
-    // HeroBtnWrapper,
-    // ArrowForward,
-    // ArrowRight,
+    BtnWrapper,
+    ArrowForward,
+    ArrowRight,
 } from "./FormElements";
-// import { Button } from "../ButtonElements";
-
+import { Button } from "../ButtonElements";
 
 const initialValues = {
     name: "",
@@ -46,12 +45,12 @@ const validationSchema = Yup.object({
 });
 
 const FormSection = () => {
-    // const [hover, setHover] = useState(false);
+    const [hover, setHover] = useState(false);
 
-    // const onHover = () => {
-    //     setHover(!hover);
-    // };
-    
+    const onHover = () => {
+        setHover(!hover);
+    };
+
     return (
         <FormikContainer
             initialValues={initialValues}
@@ -100,13 +99,16 @@ const FormSection = () => {
                         {(errorMsg) => <Error>{errorMsg}</Error>}
                     </ErrorMessage>
                 </FormControl>
-                {/* <HeroBtnWrapper>
+                <BtnWrapper type="submit">
                     <Button
-                        type="submit"
                         onMouseEnter={onHover}
                         onMouseLeave={onHover}
                         primary="true"
                         dark="true"
+                        wide
+                        fontBig
+                        height
+                        radius
                         smooth={true}
                         duration={500}
                         spy={true}
@@ -116,9 +118,9 @@ const FormSection = () => {
                         Send
                         {hover ? <ArrowForward /> : <ArrowRight />}
                     </Button>
-                </HeroBtnWrapper> */}
+                </BtnWrapper>
 
-                <button type="submit">Submit</button>
+                {/* <button type="submit">Submit</button> */}
             </FormContainer>
         </FormikContainer>
     );
