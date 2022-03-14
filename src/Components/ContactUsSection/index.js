@@ -4,6 +4,7 @@ import FormSection from "../FormSection";
 import {
     ContactContainer,
     ContactWrapper,
+    Heading,
     MapContainer,
     FormContainer,
     FormWrap,
@@ -14,6 +15,7 @@ const ContactUs = () => {
     return (
         <ContactContainer id="contactUs">
             <ContactWrapper>
+                <Heading>Contact Us</Heading>
                 <FormWrap>
                     <MapContainer>
                         <Location

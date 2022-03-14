@@ -7,10 +7,9 @@ import AboutSection from "../Components/AboutSection";
 
 import InfoSection from "../Components/InfoSection";
 import { homeObjTwo } from "../Components/InfoSection/Data";
-// import Services from "../Components/Services";
+import Services from "../Components/Services";
 import Footer from "../Components/Footer";
 import ContactUs from "../Components/ContactUsSection";
-import ContactUs2 from "../Components/ContactUsSectionCopy";
 import ClientSection from "../Components/ClientSection";
 
 function Home() {
@@ -27,10 +26,9 @@ function Home() {
             <HeroSection />
             <AboutSection />
             <InfoSection {...homeObjTwo} />
-            {/* <Services /> */}
+            <Services />
             <ClientSection />
-            {/* <ContactUs /> */}
-            <ContactUs2 />
+            <ContactUs />
             <Footer />
         </>
     );

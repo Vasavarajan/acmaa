@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ClientContainer = styled.div`
     background: #f5fbff;
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,12 +15,14 @@ export const ClientWrapper = styled.div`
     align-items: center;
     flex-direction: column;
     overflow: hidden;
-
 `;
 export const ClientTitle = styled.h1`
     color: #02121f;
     font-size: 40px;
     line-height: 32px;
+    font-weight: normal;
+    padding: 12px;
+    margin-bottom: 10px;
 
     @media screen and (max-width: 800px) {
         font-size: 36px;

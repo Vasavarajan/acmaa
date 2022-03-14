@@ -11,12 +11,31 @@ export const ContactWrapper = styled.div`
     align-items: center;
     margin: 0 auto;
     justify-content: center;
+    flex-direction: column;
 
     @media screen and (max-width: 800px) {
         padding: 30px 20px;
     }
     @media screen and (max-width: 400px) {
         padding: 15px;
+    }
+`;
+
+export const Heading = styled.div`
+    color: #1085e4;
+    font-size: 40px;
+    line-height: 32px;
+    font-weight: normal;
+    padding: 12px;
+    margin-bottom: 10px;
+
+    @media screen and (max-width: 800px) {
+        font-size: 36px;
+        line-height: 28px;
+    }
+    @media screen and (max-width: 400px) {
+        font-size: 32px;
+        line-height: 24px;
     }
 `;
 
@@ -47,7 +66,7 @@ export const MapContainer = styled.div`
 `;
 
 export const FormContainer = styled.div`
-    padding: 30px 10px 30px 30px;
+    padding: 30px 10px 30px 40px;
     width: 50%;
     height: auto;
 
