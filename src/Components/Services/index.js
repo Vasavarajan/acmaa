@@ -14,6 +14,8 @@ import {
     List,
 } from "./ServicesElements";
 
+
+
 let slides = [
     <ServicesCard>
         <ServicesIcon src={Icon1} />
@@ -31,7 +33,7 @@ let slides = [
         <ServicesIcon src={Icon1} />
         <ServicesH2>Industrial Automation</ServicesH2>
         <ServicesList>
-            <List>Fixtures for VMC & HMC MAchines.</List>
+            <List>Fixtures for VMC & HMC Machines.</List>
             <List>Turning Fixtures for CNC Lathes.</List>
             <List>Leak Checking Systems.</List>
             <List>Testing Equipments.</List>
@@ -85,7 +87,7 @@ function Services() {
                     <ServicesCarousel
                         slides={slides}
                         autoplay={true}
-                        interval={2500}
+                        interval={4000}
                         arrows={false}
                     />
                 </CarouselSection>

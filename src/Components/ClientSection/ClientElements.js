@@ -10,7 +10,7 @@ export const ClientContainer = styled.div`
 export const ClientWrapper = styled.div`
     max-width: 1440px;
     display: flex;
-    height: 300px;
+    height: 350px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -22,7 +22,8 @@ export const ClientTitle = styled.h1`
     line-height: 32px;
     font-weight: normal;
     padding: 12px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
+    margin-top: 50px;
 
     @media screen and (max-width: 800px) {
         font-size: 36px;
@@ -38,6 +39,7 @@ export const ClientList = styled.div`
     width: 100%;
     /* max-width: 1440px; */
     padding-top: 24px;
+    padding-bottom: 24px;
     justify-content: center;
     align-items: center;
 

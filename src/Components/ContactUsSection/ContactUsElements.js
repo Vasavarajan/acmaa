@@ -27,8 +27,8 @@ export const Heading = styled.div`
     line-height: 32px;
     font-weight: normal;
     padding: 12px;
-    margin-bottom: 10px;
-
+    margin-top: 50px;
+    margin-bottom: 30px;
     @media screen and (max-width: 800px) {
         font-size: 36px;
         line-height: 28px;

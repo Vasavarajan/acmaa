@@ -11,10 +11,11 @@ import {
     FormControl,
     Error,
     BtnWrapper,
+    Button,
     ArrowForward,
     ArrowRight,
 } from "./FormElements";
-import { Button } from "../ButtonElements";
+// import { Button } from "../ButtonElements";
 
 const initialValues = {
     name: "",
@@ -103,12 +104,6 @@ const FormSection = () => {
                     <Button
                         onMouseEnter={onHover}
                         onMouseLeave={onHover}
-                        primary="true"
-                        dark="true"
-                        wide
-                        fontBig
-                        height
-                        radius
                         smooth={true}
                         duration={500}
                         spy={true}

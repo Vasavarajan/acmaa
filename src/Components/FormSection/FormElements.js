@@ -59,12 +59,39 @@ export const BtnWrapper = styled.div`
     padding-top: 15px;
 `;
 
+export const Button = styled.button`
+    border-radius: 20px;
+    width: 150px;
+    background: #1085e4;
+    white-space: nowrap;
+    padding-left: 24px;
+    /* padding-top: 20px;
+    padding-bottom: 20px; */
+    height: 40px;
+    color: #f5fbff;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+        transition: all 0.2s ease-in-out;
+        background: #f5fbff;
+        color: #02121f;
+    }
+`;
+
 export const ArrowForward = styled(MdArrowForward)`
     margin-left: 8px;
+    margin-right: 16px;
     font-size: 24px;
 `;
 export const ArrowRight = styled(MdKeyboardArrowRight)`
+    margin-right: 16px;
     margin-left: 8px;
     font-size: 24px;
-    //
 `;
