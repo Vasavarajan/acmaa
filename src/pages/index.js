@@ -4,13 +4,12 @@ import Navbar from "../Components/Navbar";
 import Sidebar from "../Components/Sidebar";
 import HeroSection from "../Components/HeroSection";
 import AboutSection from "../Components/AboutSection";
-
 import InfoSection from "../Components/InfoSection";
 import { homeObjTwo } from "../Components/InfoSection/Data";
 import Services from "../Components/Services";
-import Footer from "../Components/Footer";
-import ContactUs from "../Components/ContactUsSection";
 import ClientSection from "../Components/ClientSection";
+import ContactUs from "../Components/ContactUsSection";
+import Footer from "../Components/Footer";
 
 function Home() {
     const [isOpen, setIsOpen] = useState(false);
