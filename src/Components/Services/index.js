@@ -14,8 +14,6 @@ import {
     List,
 } from "./ServicesElements";
 
-
-
 let slides = [
     <ServicesCard>
         <ServicesIcon src={Icon1} />
@@ -74,6 +72,17 @@ let slides = [
             <List>Cycle dynamic Testing Equipments.</List>
             <List>Frame Numbering Machine.</List>
             <List>Head cup Pressing Machine.</List>
+        </ServicesList>
+    </ServicesCard>,
+    <ServicesCard>
+        <ServicesIcon src={Icon1} />
+        <ServicesH2>Fixtures</ServicesH2>
+        <ServicesList>
+            <List>Hydraulic Clamping Craddle Fixture.</List>
+            <List>Hydraulic Clamping Hmc Fixture.</List>
+            <List>Hydraulic Clamping Indexing Fixture.</List>
+            <List>Pneumatic Clamping Fixture.</List>
+            <List>Hydraulic Clamping Turning Fixture.</List>
         </ServicesList>
     </ServicesCard>,
 ];
