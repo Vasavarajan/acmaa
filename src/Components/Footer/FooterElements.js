@@ -15,7 +15,6 @@ export const FooterWrap = styled.div`
     margin: 0 auto;
 `;
 
-
 export const SocialMedia = styled.section`
     width: 100%;
 `;
@@ -29,18 +28,60 @@ export const SocialMediaWrap = styled.div`
         flex-direction: column;
     }
 `;
-
-export const SocialLogo = styled(Link)`
-    color: #fff;
-    justify-self: start;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 1.5rem;
+export const Left = styled.div`
+    justify-self: flex-start;
     display: flex;
     align-items: center;
-    font-weight: bold;
+
+    @media screen and (max-width: 820px) {
+        flex-direction: column;
+    }
+`;
+export const SocialLogo = styled(Link)`
+    color: #1085e4; // company logo color
+    justify-self: flex-start;
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-size: 20px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    margin-left: 16px;
+    margin-bottom: 4px;
+    font-weight: 600;
+    text-decoration: none;
+    padding-right: 8px;
+    border-right: 1px solid #1085e4;
+
+    @media screen and (max-width: 820px) {
+        border: none;
+    }
+`;
+
+export const LogoIcon = styled.img`
+    height: 30px;
+    width: 30px;
+    /* margin-bottom: 10px; */
 `;
 
 export const WebsiteRights = styled.small`
     color: #fff;
+    /* padding-left: 8px; */
+    margin:4px;
+    margin-left:8px;
+    font-size: 14px;
+    line-height:22px;
+    font-weight:normal;
 `;
+
+export const DesignBy = styled.h4`
+    color: #fff;
+    /* padding-left: 8px; */
+    margin: 4px;
+    margin-left: 8px;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: normal;
+    letter-spacing: 2px
+`;
+

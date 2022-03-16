@@ -6,9 +6,14 @@ import {
     FooterWrap,
     SocialMedia,
     SocialMediaWrap,
+    Left,
     SocialLogo,
     WebsiteRights,
+    LogoIcon,
+    DesignBy,
 } from "./FooterElements";
+
+import Logo from "../../Assets/Images/COMPANY LOGO.png";
 
 function Footer() {
     const toggleHome = () => {
@@ -20,15 +25,17 @@ function Footer() {
             <FooterWrap>
                 <SocialMedia>
                     <SocialMediaWrap>
-                        {/* <SocialLogo to="/" onClick={toggleHome}>
-                            ACMAA
-                        </SocialLogo> */}
-                        <WebsiteRights>
-                            ACMAA © {new Date().getFullYear()} All rights
-                            reserved.
-                        </WebsiteRights>
-
-                        <WebsiteRights>Design by : Vasavarajan</WebsiteRights>
+                        <Left>
+                            <SocialLogo to="/" onClick={toggleHome}>
+                                <LogoIcon src={Logo} />
+                                ACMAA
+                            </SocialLogo>
+                            <WebsiteRights>
+                                © {new Date().getFullYear()} All rights
+                                reserved.
+                            </WebsiteRights>
+                        </Left>
+                        <DesignBy>Design by : Vasavarajan</DesignBy>
                     </SocialMediaWrap>
                 </SocialMedia>
             </FooterWrap>

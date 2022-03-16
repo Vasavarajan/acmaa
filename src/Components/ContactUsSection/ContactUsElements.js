@@ -24,18 +24,18 @@ export const ContactWrapper = styled.div`
 export const Heading = styled.div`
     color: #1085e4;
     font-size: 40px;
-    line-height: 32px;
+    line-height: 48px;
     font-weight: normal;
     padding: 12px;
-    margin-top: 50px;
+    margin-top: 30px;
     margin-bottom: 30px;
     @media screen and (max-width: 800px) {
         font-size: 36px;
-        line-height: 28px;
+        line-height: 44px;
     }
     @media screen and (max-width: 400px) {
         font-size: 32px;
-        line-height: 24px;
+        line-height: 40px;
     }
 `;
 
@@ -57,7 +57,7 @@ export const MapContainer = styled.div`
     width: 50%;
     height: auto;
     background: #88c2f2;
-    padding: 8px;
+    padding: 5px;
     border-radius: 10px;
 
     @media screen and (max-width: 820px) {

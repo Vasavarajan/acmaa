@@ -21,7 +21,7 @@ export const ServicesWrapper = styled.div`
 export const ServicesH1 = styled.h1`
     color: #1085e4;
     font-size: 40px;
-    line-height: 32px;
+    line-height:48px;
     font-weight: normal;
     padding: 12px;
     margin-top: 50px;
@@ -29,11 +29,11 @@ export const ServicesH1 = styled.h1`
 
     @media screen and (max-width: 800px) {
         font-size: 36px;
-        line-height: 28px;
+        line-height: 44px;
     }
     @media screen and (max-width: 400px) {
         font-size: 32px;
-        line-height: 24px;
+        line-height: 40px;
     }
 `;
 
@@ -83,38 +83,38 @@ export const ServicesH2 = styled.h2`
     text-align: center;
     color: #1085e4;
     font-size: 28px;
-    line-height: 26px;
+    line-height: 36px;
     font-weight: 700;
     padding-bottom: 12px;
 
     @media screen and (max-width: 800px) {
         font-size: 24px;
-        line-height: 18px;
+        line-height: 32px;
     }
     @media screen and (max-width: 400px) {
         font-size: 20px;
-        line-height: 18px;
+        line-height: 28px;
     }
 `;
 
 export const ServicesList = styled.ul`
     font-size: 20px;
-    line-height: 20px;
+    line-height: 28px;
     font-weight: normal;
     padding-left: 10px;
 
     @media screen and (max-width: 800px) {
-        font-size: 18px;
-        line-height: 18px;
+        font-size: 16px;
+        line-height: 24px;
     }
     @media screen and (max-width: 400px) {
-        font-size: 16px;
-        line-height: 16px;
+        font-size: 12px;
+        line-height: 20px;
     }
 `;
 
 export const List = styled.li`
-    padding-bottom: 10px;
+    padding-bottom: 5px;
 
     font-weight: normal;
     color: #f5fbff;
