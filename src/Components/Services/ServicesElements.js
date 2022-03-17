@@ -21,7 +21,7 @@ export const ServicesWrapper = styled.div`
 export const ServicesH1 = styled.h1`
     color: #1085e4;
     font-size: 40px;
-    line-height:48px;
+    line-height: 48px;
     font-weight: normal;
     padding: 12px;
     margin-top: 50px;

@@ -82,6 +82,7 @@ export const DesignBy = styled.h4`
     font-size: 14px;
     line-height: 22px;
     font-weight: normal;
-    letter-spacing: 2px
+    letter-spacing: 2px;
+    cursor: pointer;
 `;
 
