@@ -7,8 +7,10 @@ import {
     TopSection,
     CompanyLogo,
     CompanyName,
+    CompanyContact,
     Names,
     Name,
+    NameShort,
     AddressSectiion,
     Wrap,
     Line,
@@ -19,6 +21,7 @@ import {
     DesignBy,
     Location,
     Phone,
+
 } from "./FooterElements";
 
 import Logo from "../../Assets/Images/COMPANY LOGO.png";
@@ -37,24 +40,31 @@ function Footer() {
                         <CompanyName>
                             <Names>ACCURATE MACHINES AND</Names>
                             <Names>ACCESSERIES PVT. LTD.</Names>
-                            <Name>ACMAA</Name>
+                            <Name>
+                                ACCURATE MACHINES AND ACCESSERIES PVT. LTD.
+                            </Name>
+                            <NameShort>
+                                ACMAA
+                            </NameShort>
                         </CompanyName>
                     </CompanyLogo>
-                    <AddressSectiion>
-                        <Location />
-                        <Wrap>
-                            <Line>397, SIDCO Industrial Estate ,</Line>
-                            <Line>Ambattur, Chennai,</Line>
-                            <Line>TamilNadu - 600098</Line>
-                        </Wrap>
-                    </AddressSectiion>
-                    <PhoneNumber>
-                        <Phone />
-                        <Wrap>
-                            <Line>V. Purushothaman ( +919840246804 )</Line>
-                            <Line>P. Sampath Kumar ( +919840148272 )</Line>
-                        </Wrap>
-                    </PhoneNumber>
+                    <CompanyContact>
+                        <AddressSectiion>
+                            <Location />
+                            <Wrap>
+                                <Line>397, SIDCO Industrial Estate ,</Line>
+                                <Line>Ambattur, Chennai,</Line>
+                                <Line>TamilNadu - 600098</Line>
+                            </Wrap>
+                        </AddressSectiion>
+                        <PhoneNumber>
+                            <Phone />
+                            <Wrap>
+                                <Line>V. Purushothaman ( +91 9840246804 )</Line>
+                                <Line>P. Sampath Kumar ( +91 9840148272 )</Line>
+                            </Wrap>
+                        </PhoneNumber>
+                    </CompanyContact>
                 </TopSection>
                 <BottomSection>
                     <WebsiteRights>

@@ -24,9 +24,14 @@ export const TopSection = styled.div`
     margin-top: 24px;
     /* align-items: center; */
 
+    @media screen and (max-width: 1024px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     @media screen and (max-width: 820px) {
         flex-direction: column;
-        justify-content:center;
+        justify-content: center;
         align-items: center;
     }
 `;
@@ -37,12 +42,19 @@ export const CompanyLogo = styled(Link)`
     cursor: pointer;
     display: flex;
     align-items: center;
+    width: 40%;
+
     /* margin-left: 16px; */
     /* margin-bottom: 4px; */
     text-decoration: none;
 
-    @media screen and (max-width: 820px) {
-        padding-bottom:16px;
+    @media screen and (max-width: 1024px) {
+        padding-bottom: 16px;
+        width: 100%;
+        justify-content: center;
+    }
+    @media screen and (max-width: 756px) {
+        align-items: center;
     }
 `;
 
@@ -59,7 +71,7 @@ export const CompanyName = styled.div`
 `;
 
 export const Names = styled.p`
-    letter-spacing: 1px;
+    /* letter-spacing: 1px; */
     font-size: 22px;
     line-height: 30px;
     font-weight: 600;
@@ -70,14 +82,46 @@ export const Names = styled.p`
 `;
 
 export const Name = styled.p`
-    letter-spacing: 1px;
+    /* letter-spacing: 1px; */
     font-size: 24px;
     line-height: 32px;
     font-weight: 600;
     display: none;
+    text-align: center;
 
     @media screen and (max-width: 1024px) {
         display: block;
+    }
+    @media screen and (max-width: 450px) {
+        display: none;
+    }
+`;
+
+export const NameShort = styled.p`
+    /* letter-spacing: 1px; */
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 600;
+    display: none;
+    text-align: center;
+
+    @media screen and (max-width: 450px) {
+        display: block;
+    }
+`;
+
+export const CompanyContact = styled.div`
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+
+    @media screen and (max-width: 1024px) {
+        width: 100%;
+    }
+    @media screen and (max-width: 756px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 `;
 
@@ -91,15 +135,18 @@ export const AddressSectiion = styled.div`
     }
 `;
 
-export const Wrap = styled.h2`
-
-`;
+export const Wrap = styled.h2``;
 
 export const Line = styled.p`
     color: #f5fbff;
     font-size: 16px;
     line-height: 24px;
     font-weight: normal;
+
+    @media screen and (max-width: 756px) {
+        font-size: 14px;
+        line-height: 22px;
+    }
 `;
 
 export const PhoneNumber = styled.div`
@@ -107,7 +154,7 @@ export const PhoneNumber = styled.div`
     /* align-items: flex-start; */
     /* justify-content: flex-start; */
 
-    @media screen and (max-width: 820px) {
+    @media screen and (max-width: 756px) {
         padding-bottom: 16px;
     }
 `;
@@ -118,7 +165,7 @@ export const BottomSection = styled.div`
     justify-content: space-between;
     align-items: center;
 
-    @media screen and (max-width: 820px) {
+    @media screen and (max-width: 756px) {
         flex-direction: column;
     }
 `;

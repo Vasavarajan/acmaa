@@ -1,6 +1,11 @@
 import React from "react";
 
-import Icon1 from "../../Assets/Images/svg1.svg";
+import Icon1 from "../../Assets/Images/Icons/Factory.png";
+import Icon2 from "../../Assets/Images/Icons/Automation.png";
+import Icon3 from "../../Assets/Images/Icons/Factory1.png";
+import Icon4 from "../../Assets/Images/Icons/Brakelining.png";
+import Icon5 from "../../Assets/Images/Icons/Bicycle.png";
+import Icon6 from "../../Assets/Images/Icons/Fixture.png";
 import {
     ServicesContainer,
     ServicesWrapper,
@@ -28,7 +33,7 @@ let slides = [
         </ServicesList>
     </ServicesCard>,
     <ServicesCard>
-        <ServicesIcon src={Icon1} />
+        <ServicesIcon src={Icon2} />
         <ServicesH2>Industrial Automation</ServicesH2>
         <ServicesList>
             <List>Fixtures for VMC & HMC Machines.</List>
@@ -40,7 +45,7 @@ let slides = [
         </ServicesList>
     </ServicesCard>,
     <ServicesCard>
-        <ServicesIcon src={Icon1} />
+        <ServicesIcon src={Icon3} />
         <ServicesH2>Products Manufacturing Industries</ServicesH2>
         <ServicesList>
             <List>Multi Spindle Drilling & Tapping Machine.</List>
@@ -52,7 +57,7 @@ let slides = [
         </ServicesList>
     </ServicesCard>,
     <ServicesCard>
-        <ServicesIcon src={Icon1} />
+        <ServicesIcon src={Icon4} />
         <ServicesH2>Brake Lining Industries</ServicesH2>
         <ServicesList>
             <List>Brake shoe O.D Grinding Machine.</List>
@@ -63,7 +68,7 @@ let slides = [
         </ServicesList>
     </ServicesCard>,
     <ServicesCard>
-        <ServicesIcon src={Icon1} />
+        <ServicesIcon src={Icon5} />
         <ServicesH2>Bi-Cycle Industries</ServicesH2>
         <ServicesList>
             <List>Flexible Mitring Machine.</List>
@@ -75,7 +80,7 @@ let slides = [
         </ServicesList>
     </ServicesCard>,
     <ServicesCard>
-        <ServicesIcon src={Icon1} />
+        <ServicesIcon src={Icon6} />
         <ServicesH2>Fixtures</ServicesH2>
         <ServicesList>
             <List>Hydraulic Clamping Craddle Fixture.</List>

@@ -67,25 +67,28 @@ export const ServicesCard = styled.div`
     @media screen and (max-width: 600px) {
         width: 100%;
     }
-    @media screen and (max-width: 320px) {
-        min-width: 240px;
+    @media screen and (max-width: 350px) {
+        min-width: 220px;
     }
 `;
 
 export const ServicesIcon = styled.img`
-    height: 160px;
-    width: 160px;
-    margin-bottom: 10px;
+    height: 100px;
+    width: 100px;
+    margin-bottom: 16px;
+    /* margin-top: 16px; */
+    color: #1085e4;
 `;
 
 export const ServicesH2 = styled.h2`
-    margin-bottom: 10px;
+    margin-bottom: 16px;
+    /* margin-top: 10px; */
     text-align: center;
     color: #1085e4;
     font-size: 28px;
     line-height: 36px;
-    font-weight: 700;
-    padding-bottom: 12px;
+    font-weight: 500;
+    /* padding-bottom: 12px; */
 
     @media screen and (max-width: 800px) {
         font-size: 24px;
@@ -102,6 +105,7 @@ export const ServicesList = styled.ul`
     line-height: 28px;
     font-weight: normal;
     padding-left: 10px;
+    /* height: 50%; */
 
     @media screen and (max-width: 800px) {
         font-size: 16px;

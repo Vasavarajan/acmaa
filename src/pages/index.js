@@ -29,7 +29,7 @@ function Home() {
             <Services />
             <ClientSection />
             <ContactUs />
-            <Footer />
+            {/* <Footer /> */}
             <Footer2 />
         </>
     );
