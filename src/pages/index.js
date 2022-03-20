@@ -10,7 +10,6 @@ import Services from "../Components/Services";
 import ClientSection from "../Components/ClientSection";
 import ContactUs from "../Components/ContactUsSection";
 import Footer from "../Components/Footer";
-import Footer2 from "../Components/Footer copy";
 
 function Home() {
     const [isOpen, setIsOpen] = useState(false);
@@ -29,8 +28,7 @@ function Home() {
             <Services />
             <ClientSection />
             <ContactUs />
-            {/* <Footer /> */}
-            <Footer2 />
+            <Footer />
         </>
     );
 }
