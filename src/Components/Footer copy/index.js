@@ -21,6 +21,7 @@ import {
     DesignBy,
     Location,
     Phone,
+    Hr
 
 } from "./FooterElements";
 
@@ -43,9 +44,7 @@ function Footer() {
                             <Name>
                                 ACCURATE MACHINES AND ACCESSERIES PVT. LTD.
                             </Name>
-                            <NameShort>
-                                ACMAA
-                            </NameShort>
+                            <NameShort>ACMAA</NameShort>
                         </CompanyName>
                     </CompanyLogo>
                     <CompanyContact>
@@ -60,12 +59,13 @@ function Footer() {
                         <PhoneNumber>
                             <Phone />
                             <Wrap>
-                                <Line>V. Purushothaman ( +91 9840246804 )</Line>
-                                <Line>P. Sampath Kumar ( +91 9840148272 )</Line>
+                                <Line>V. Purushothaman : +91 9840246804</Line>
+                                <Line>P. Sampath Kumar : +91 9840148272</Line>
                             </Wrap>
                         </PhoneNumber>
                     </CompanyContact>
                 </TopSection>
+                <Hr />
                 <BottomSection>
                     <WebsiteRights>
                         ACMAA © {new Date().getFullYear()} All rights reserved.

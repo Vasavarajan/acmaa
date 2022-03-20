@@ -147,6 +147,10 @@ export const Line = styled.p`
         font-size: 14px;
         line-height: 22px;
     }
+    @media screen and (max-width: 320px) {
+        font-size: 12px;
+        line-height: 20px;
+    }
 `;
 
 export const PhoneNumber = styled.div`
@@ -156,7 +160,18 @@ export const PhoneNumber = styled.div`
 
     @media screen and (max-width: 756px) {
         padding-bottom: 16px;
+        /* align-items: center; */
+
+        justify-content: center;
     }
+`;
+
+export const Hr = styled.hr`
+    width: 100%;
+    margin-bottom: 16px;
+    border: 0.1px solid #88c2f2;
+    border-radius: 5px;
+    height: 0.5px;
 `;
 
 export const BottomSection = styled.div`
@@ -167,6 +182,8 @@ export const BottomSection = styled.div`
 
     @media screen and (max-width: 756px) {
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 `;
 
