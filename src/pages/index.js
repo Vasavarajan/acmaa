@@ -4,11 +4,11 @@ import Navbar from "../Components/Navbar";
 import Sidebar from "../Components/Sidebar";
 import HeroSection from "../Components/HeroSection";
 import AboutSection from "../Components/AboutSection";
-import InfoSection from "../Components/InfoSection";
-import { homeObjTwo } from "../Components/InfoSection/Data";
+import ProductSection from "../Components/ProductSection";
 import Services from "../Components/Services";
 import ClientSection from "../Components/ClientSection";
 import ContactUs from "../Components/ContactUsSection";
+import Card from "../Components/Card";
 import Footer from "../Components/Footer";
 
 function Home() {
@@ -24,10 +24,11 @@ function Home() {
             <Navbar toggle={toggle} />
             <HeroSection />
             <AboutSection />
-            <InfoSection {...homeObjTwo} />
+            <ProductSection />
             <Services />
             <ClientSection />
             <ContactUs />
+            <Card />
             <Footer />
         </>
     );
